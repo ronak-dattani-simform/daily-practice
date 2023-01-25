@@ -1,0 +1,26 @@
+
+Created Table and columns : 
+- rails g migration CreateUsers name:string surname:string address:text phone_number:integer
+
+Migration to database : 
+- rails db:migrate
+
+Added column to table : 
+- rails g migration AddIsAdminToUsers
+
+
+
+Seed data entry with use of up-down method :
+- rails g migration AddUsersToUsers
+
+Migration with up method :
+- rails db:migrate 
+Roll back with down method :
+- rails db:rollback
+  
+  
+  Delete created migration : 
+  -rails d  migration AddProductRedToUser
+  
+  Creating join table : 
+  - rails g migration CreateJoinTableProductUser product user
